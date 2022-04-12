@@ -1,48 +1,52 @@
 const choices = ['Rock', 'Paper', 'Scissors'] // These are the available selections
 
 const pcChoice =  choices[Math.floor(Math.random() * choices.length)];
-   ("PC: " + pcChoice)
+  console.log("PC: " + pcChoice)
 
 let playerChoice = prompt("Please enter Rock, Paper or Scissors").toLowerCase();
    console.log("Player " + playerChoice)
 
-function game (){
-
-} 
 
 function playGame(playerChoice, pcChoice){
    if ((playerChoice ==='paper') && (pcChoice === 'scissors')){
-       return("You Lose!");
+       return prompt("You Lose!");
 
     } else if ((playerChoice === 'paper') && (pcChoice === 'rock')) {
-       return("You Win!");
+       prompt("You Win!");
 
      } else if ((playerChoice === 'scissors') && (pcChoice === 'rock')) {
-       return("You Lose!");
+       prompt("You Lose!");
    
       } else if ((playerChoice === 'scissors') && (pcChoice === 'paper')) {
-       return("You Win!");
+       prompt("You Win!");
 
        } else if ((playerChoice === 'rock') && (pcChoice === 'scissors')) {
-       return("You Win!");  
+       prompt("You Win!");  
 
         } else if ((playerChoice === 'rock') && (pcChoice === 'paper')) {
-        return("You Lose!");
+        prompt("You Lose!");
 
          } else if (playerChoice === "Rock" && pcChoice === "Rock") {
-           return("It's a tie! You both picked Rock.");
+           prompt("It's a tie! You both picked Rock.");
   
             } else if (playerChoice === "Scissors" && pcChoice === "Scissors") {
-            return("It's a tie! You both picked Scissors.");
+            prompt("It's a tie! You both picked Scissors.");
 
             } else if (playerChoice === "Paper" && pcChoice === "Paper") {
-            return("It's a tie! You both picked Paper.");
+            prompt("It's a tie! You both picked Paper.");
               
             } else 
-            return("Tie!");
+            prompt("Tie!");
 
 } 
 function playRound(playerChoice, pcChoice){
-    return playGame
+    for (let i = 0; i < 5; i++){
+        console.log("Round: " + i);
+        let playerChoice = prompt("Please enter Rock, Paper or Scissors").toLowerCase();
+   console.log("Player " + playerChoice)
+   const pcChoice =  choices[Math.floor(Math.random() * choices.length)];
+   console.log("PC: " + pcChoice)
+   function playGame(playerChoice, pcChoice)
+    }
 }
-console.log(playRound(playerChoice, pcChoice))
+playRound(playerChoice, pcChoice)
