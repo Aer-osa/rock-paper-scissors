@@ -3,6 +3,7 @@ const choices = ['rock', 'paper', 'scissors'] // These are the available selecti
 const pcChoice =  choices[Math.floor(Math.random() * choices.length)];
   console.log("PC: " + pcChoice)
 // Chooses random choice
+
 let playerChoice = prompt("Please enter Rock, Paper or Scissors").toLowerCase();
    console.log("Player " + playerChoice)
 // Prompts player for their choice
